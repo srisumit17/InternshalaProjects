@@ -1,0 +1,25 @@
+body {
+    border: black;
+    background-color:lightseagreen;
+}
+h2{
+    color:darkgreen;
+    font-style: italic;
+    text-shadow: 5px 0px darkcyan ;
+}
+h3{
+    color:blueviolet;
+    font-style: italic;
+    text-shadow:2px 0px palevioletred;
+}
+
+h4 {
+    color:darkred;
+
+
+}
+
+p {
+   color: darkblue;
+   text-align: center;
+}

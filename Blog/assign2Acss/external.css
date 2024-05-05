@@ -1,0 +1,228 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media(min-width:900px){
+    body {
+        background-color:lightgreen;
+}
+}
+.animate{
+    position: static;
+    margin-left: 0px;
+    animation: imageMovement 5s infinite 2s;
+}
+
+@keyframes imageMovement{
+    from{
+        top: opx;
+        left: 0px;
+    }
+    to{
+        top: 0px;
+        left: 300px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
+
+.animate2{
+    position:relative;
+    margin-left: 0px;
+    animation: imageMovements 10s infinite 1s;
+}
+
+@keyframes imageMovements{
+    from{
+        top: 0px;
+        left: 0px;
+    }
+    to{
+        top: 0px;
+        left: 300px;
+        background-color: yellowgreen;
+        border-radius: 50%;
+    }
+}
+.img1 {
+    display: flex;
+}
+.img1 button{
+    color: lightblue;
+    background-color:darkred;
+}
+
+
+/*.images{
+    padding: 30%;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    gap: 20px;
+    transition: all 2s linear 1s;
+}*/
+
+#jpg1:hover {
+    border-radius: 50px;
+    transform: scaleX(1.5);
+}
+
+#jpg2:hover {
+    transform: skewY(45deg);
+}
+
+#jpg3:hover {
+    transform: translateY(-50px);
+
+}
+h1 {
+    color: brown;
+    text-align: center;
+    font-style: italic;
+    font-size: 5rem;
+    text-shadow:10px 0px teal ;
+}
+
+h2 {
+    color:darkolivegreen;
+    font-style: italic;
+    text-shadow:5px 0px darkcyan;
+}
+
+.container {
+    width: 100%;
+    margin: 5px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 1px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background-color:darkorange;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.box p {
+    width:490;
+    color: wheat;
+}
+
+article{
+    border: 1px solid black;
+    background-color:lightskyblue;
+    text-align: center;
+    margin: 1px;
+    padding: 10px;
+}
+@media(min-width:5px)and(max-width:10px){
+.article{
+       background-color: teal;
+    }
+}
+article h2{
+    color: darkmagenta;
+    text-shadow: #fff;
+}
+
+article h3{
+    color:darkblue;
+    text-shadow: lightcoral;
+}
+#lastimg{
+    text-align:center;
+    border-radius: 50px;
+    box-shadow: -20px -20px #333;
+}
+
+
+.nav1 {
+    display: flex;
+}
+
+header {
+    background-color: lightcoral;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#p4 {
+    display: inline-block;
+    text-align: center;
+}
+@media(max-width:500px){
+.setimgs{
+    display: flex;
+}
+}
+
+.div1 {
+    text-align: right;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+#p2 {
+    background: darkcyan;
+    color: darkred;
+    width: 300px;
+    height: 200x;
+    margin-left: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+#p3 {
+    color: white;
+    background-color: rgb(69, 18, 49);
+    text-align: center;
+
+}
+
+.footer-section h3 {
+    color: white;
+    background-color: black;
+    text-shadow:2px opx ipx lightcoral;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linear Progress Bar</title>
+<style>
+  .progress-bar {
+    width: 500px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .progress-bar .fill {
+    height: 10px;
+    background-color: #3498db;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .progress-bar .text {
+    color: #333;
+    font-size: 14px;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar">
+  <div class="fill" style="width: 75%;"></div>
+  Frontend dovelopment
+</div>
+<br/>
+<div class="progress-bar">
+  <div class="fill" style="width: 50%;"></div>
+  Backend dovelopment
+</div>
+
+</body>
+</html>

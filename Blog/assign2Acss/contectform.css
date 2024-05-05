@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color:lightslategray;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    width: 300px;
+    height: 250px;
+    background-color: darkgray;
+    border: 2px solid black;
+    text-align: center;
+    padding:30px;
+}
