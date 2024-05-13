@@ -46,25 +46,25 @@
 // // Display the current time
 // console.log("Current Time: " + hour + prepand + " : " + minute + " : " + second); 
 
-function getCurrentDay() {
+function currenttDay() {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const currentDate = new Date();
     const currentDay = days[currentDate.getDay()];
     return currentDay;
 }
-function getCurrentTime() {
+function currenttTime() {
     const currentDate = new Date();
     let hours = currentDate.getHours();
     let minutes = currentDate.getMinutes();
     let seconds = currentDate.getSeconds();
-    const meridiem = (hours >= 12) ? 'PM' : 'AM';
+    const prepand = (hours >= 12) ? 'PM' : 'AM';
     hours = (hours > 12) ? hours - 12 : hours;
     minutes = (minutes < 10) ? '0' + minutes : minutes;
     seconds = (seconds < 10) ? '0' + seconds : seconds;
     
-    return `${hours} ${meridiem} : ${minutes} : ${seconds}`;
+    return `${hours} ${prepand} : ${minutes} : ${seconds}`;
 }
-const currentDay = getCurrentDay();
-const currentTime = getCurrentTime();
+const currentDay = currenttDay();
+const currentTime = currenttTime();
 console.log(`Today is : ${currentDay}.`);
 console.log(`Current time is : ${currentTime}.`);
